@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Form</title>
+    <link rel="stylesheet" href="css/validate_form.css">
+</head>
+<body>
+
+    <div class="form-wrap">
+        <div class="msg"></div>
+        <form action="validate_form.html" id="form-register" method="get">
+            <div class="form-group fullname-error">
+                <label for="">Họ và tên</label>
+                <input type="text" name="fullname" class="field-item" placeholder="Nhập họ và tên..."/>
+                <span class="error"></span>
+            </div>
+    
+            <div class="form-group email-error">
+                <label for="">Email</label>
+                <input type="text" name="email" class="field-item" placeholder="Email..."/>
+                <span class="error"></span>
+            </div>
+    
+            <div class="form-group phone-error">
+                <label for="">Số điện thoại</label>
+                <input type="text" name="phone" class="field-item" placeholder="Điện thoại..."/>
+                <span class="error"></span>
+            </div>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="js/validate_form.js"></script>
+</body>
+</html>

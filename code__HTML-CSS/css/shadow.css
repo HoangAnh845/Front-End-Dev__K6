@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.block {
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+    background: green;
+    box-shadow: 10px 10px 5px 5px #999;
+}
+
+.text {
+    width: 800px;
+    margin: 20px auto;
+    text-shadow: 3px 3px 5px rgba(255, 0, 0, 0.187);
+    font-size: 25px;
+}
+
+.demo-transition {
+    height: 200px;
+    background: red;
+    color: #fff;
+    text-align: center;
+    width: 200px;
+    /* transition-property: width, height; */
+    /*Xác định kiểu chuyển động*/
+    /* transition-duration: 4s; */
+    /*Thời gian hoàn thành chuyển động*/
+    /* transition-timing-function: cubic-bezier(0.1, 0.4, 0.8, 1);
+    transition-delay: 1s; */
+    /*Thời gian chờ trước khi hiệu ứng bắt đầu chạy*/
+    transition: all 2s linear 1s;
+}
+
+.demo-transition:hover {
+    width: 400px;
+    height: 400px;
+    background-color: green;
+}
+
+.demo-transition-2 {
+    border: 1px solid red;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.demo-transition-2 p {
+    transition: all 0.5s linear;
+}
+
+.demo-transition-2 p:hover {
+    padding-left: 30px;
+}
+
+.example {
+    border: 1px solid red;
+    margin: 20px auto;
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.example .button {
+    border: none;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 16px;
+    background: green;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.example .button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background: red;
+    border-radius: 5px;
+    transition: all 0.4s linear;
+}
+
+.example .button:hover::before {
+    width: 100%;
+}
+
+.example .button span {
+    position: relative;
+    z-index: 10;
+}
+
+.example-2 {
+    border: 1px solid red;
+    margin: 20px auto;
+    width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.example-2 .button {
+    border: none;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 16px;
+    background: green;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.example-2 .button span {
+    position: relative;
+    z-index: 10;
+}
+
+.example-2 .button::before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    top: 50%;
+    bottom: 50%;
+    background: red;
+    transition: all 0.4s linear;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.example-2 .button:hover::before {
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.example-2 .button::after {
+    content: '';
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 50%;
+    top: 50%;
+    background: red;
+    transition: all 0.4s linear;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.example-2 .button:hover::after {
+    right: 0;
+    top: 0;
+    bottom: 0;
+}

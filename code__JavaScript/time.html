@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time</title>
+    <script>
+    var hours, seconds, minutes, days,minutes;
+    var endDay = new Date('12-12-2021 20:55:59').getTime();
+    var now = new Date().getTime();
+    var countDown = endDay - now;
+    setInterval(function () {
+    seconds= Math.floor(countDown/(1000));
+    hours= Math.floor(seconds / 3600);
+    minutes= Math.floor(seconds/ 60);
+    days= Math.floor(seconds/86400);
+    hours %=24;
+    minutes %=60;
+    seconds %=60;
+    document.querySelector('body').innerHTML='Còn '+days+' ngày '+hours +' giờ '+minutes+ ' phút '+seconds+ ' Giây';
+    countDown-=1000;
+    }, 1000);
+    </script>
+</head>
+<body>
+    <div class="result">
+
+    </div>
+</body>
+</html>

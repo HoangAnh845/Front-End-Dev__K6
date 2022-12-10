@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+
+.tabs{
+    width: 500px;
+    margin: 20px auto;
+}
+
+.tabs .nav-tab{
+    border-bottom: 1px solid #efefef;
+}
+
+.tabs .nav-tab ul{
+    display: flex;
+}
+
+.tabs .nav-tab ul li{
+    flex-grow: 1;
+}
+
+.tabs .nav-tab ul li a{
+    text-decoration: none;
+    display: block;
+    background: #ccc;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.tabs .nav-tab ul li.active a{
+    background-color: green;
+    color: #fff;
+}
+
+.tabs .tab-content .tab-panel{
+    display: none;
+}
+
+.tabs .tab-content .tab-panel.active{
+    display: block;
+}
+
+.fade{
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    opacity: 0;
+}
+
+.fade.active{
+    opacity: 1;
+}
+
+/* 
+.fadeOut{
+    opacity: 0;
+}
+
+.fadeIn{
+    opacity: 1;
+} */

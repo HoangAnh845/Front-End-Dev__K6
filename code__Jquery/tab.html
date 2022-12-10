@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab jQuery</title>
+    <link rel="stylesheet" href="css/tab.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="tabs">
+            <nav class="tabs__nav">
+                <ul>
+                    <li><a href="#tab_1">Tab 1</a></li>
+                    <li class="active"><a href="#tab_2">Tab 2</a></li>
+                    <li><a href="#tab_3">Tab 3</a></li>
+                    <li><a href="#tab_4">Tab 4</a></li>
+                </ul>
+            </nav>
+            <div class="tabs__content">
+                <div class="tabs--panel" id="tab_1">
+                    Nội dung tab 1
+                </div>
+                
+                <div class="tabs--panel" id="tab_3">
+                    Nội dung tab 3
+                </div>
+
+                <div class="tabs--panel active" id="tab_2">
+                    Nội dung tab 2
+                </div>
+
+                <div class="tabs--panel" id="tab_4">
+                    Nội dung tab 4
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/tab.js"></script>
+</body>
+</html>

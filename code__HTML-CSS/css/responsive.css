@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-size: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col {
+    float: left;
+    position: relative;
+    padding: 0px 10px;
+    min-height: 1px;
+}
+
+.row::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.four {
+    width: 25%;
+}
+
+
+/*Responsive*/
+
+
+/* @media all and (max-width: 320px) {}
+
+@media all and (min-width: 321px) and (max-width: 480px) {
+    body {
+        color: red;
+    }
+    .four {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width: 600px) {}
+
+@media all and (min-width: 601px) and (max-width: 800px) {}
+
+@media all and (min-width: 601px) and (max-width: 768px) {
+    body {
+        color: green;
+    }
+    .four {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {}
+
+@media all and (min-width: 1025px) {} */
+
+
+/*Màn hình điện thoại*/
+
+@media all and (max-width: 768px) {}
+
+
+/*Màn hình ipad*/
+
+@media all and (min-width: 769px) and (max-width: 992px) {}
+
+
+/*Màn hình máy tính nhỏ (Desktop Small)*/
+
+@media all and (min-width: 993px) and (max-width: 1200px) {}

@@ -1,0 +1,151 @@
+/*Khai báo biến*/
+$primaryColor: #ff0000;
+$fontFamily: "Roboto", sans-serif;
+$paddingColumn: 15px;
+$containerWidth: 1000px + $paddingColumn;
+$paddingColumn: $paddingColumn*2; //Tính toán lại giá trị $paddingColumn
+$width: 5em; //Biến toàn cục
+$fontRoboto: Roboto;
+$fontArial: Arial;
+
+$fullFont: $fontRoboto+', '+$fontArial+', '+sans-serif;
+//$fullFont: Roboto+','+sans-serif;
+
+$contentBefore: "Bài giảng"+" 1";
+
+/*Header -- Begin*/
+.header{
+    .header__logo{
+        padding: 30px 15px;
+        font-family: "Roboto", sans-serif;
+
+        img{
+            max-width: 100%;
+            height: auto;
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+        }
+    }
+
+    .header__hotline{
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+
+        .header__hotline--text{
+            color: red;
+            border: 1px solid green;
+        }
+    }
+}
+
+/*Header -- End*/
+
+/*Slide -- Begin*/
+.slideshow{
+
+    
+
+    position: relative;
+
+   
+
+    img{
+        $paddingSlide: 20px;
+        max-width: 100%;
+        height: auto;
+        padding: $paddingSlide;
+        
+    }
+
+    .slideshow__controls{
+        
+        position: absolute;
+        top: 40%;
+        z-index: 999;
+
+    }
+
+}
+/*Slide -- End*/
+
+body{
+    font-family: $fontFamily;
+    color: $primaryColor;
+}
+
+.container{
+
+    $width: $width % 3;
+    max-width: $containerWidth;
+    padding: $paddingColumn;
+    width: $width;
+
+    font-family: $fullFont;
+    content: $contentBefore;  
+}
+
+.list{
+    &.detail{
+        color: red;
+    }
+
+    .item{
+        color: green;
+    }
+
+    &:before{
+        content: '';
+        display: block;
+    }
+    &:hover{
+        background: blue;
+    }
+    &:nth-child(2n+1){
+        border: 1px solid red;
+    }
+
+    @media all and (max-width: 767px) {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 992px) {
+        padding: 0 20px;
+    }
+}
+
+// ul{
+//     &.menu{
+//         background-color: green;
+//         >li{
+//             padding: 20px 10px;
+//             >a{
+//                 color: #fff;
+//                 text-decoration: none;
+//             }
+//         }
+//     }
+// }
+
+#toggle-menu{
+    ~input[type="checkbox"]{
+        display: block;
+
+        @media all and (max-width: 767px) {
+            border: 1px solid red;
+        }
+
+    }
+
+    @media all and (max-width: 767px) {
+        display: none; 
+    }
+
+    @media all and (max-width: 1200) {
+        display: block;
+    }
+
+}

@@ -1,0 +1,31 @@
+.wrapper{
+	border: 1px solid red;
+	width: 600px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.col-1{
+	width: 30%;
+	height: 500px;
+	background: green;
+	float: left;
+}
+
+.col-2{
+	width: 30%;
+	height: 200px;
+	background: blue;
+	float: right;
+}
+
+.col-3{
+	width: 30%;
+	height: 550px;
+	background: red;
+	float: right;
+}
+
+.clear{
+	clear: both;
+}

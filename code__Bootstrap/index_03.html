@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Bootstrap - 03</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#scroll-page" data-bs-offset="0">
+
+    <!-- <div class="container">
+        <nav id="scroll-page" class="">
+    
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Products</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#news">News</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <section class="section" id="home">
+                <h2>Home</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laborum. Nulla totam repellendus eius accusantium assumenda laboriosam sunt molestias porro minima atque consequuntur tempora illo, rem illum deserunt eum ab!
+                </p>
+            </section>
+
+            <section class="section" id="about">
+                <h2>About</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laborum. Nulla totam repellendus eius accusantium assumenda laboriosam sunt molestias porro minima atque consequuntur tempora illo, rem illum deserunt eum ab!
+                </p>
+            </section>
+
+            <section class="section" id="product">
+                <h2>Products</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laborum. Nulla totam repellendus eius accusantium assumenda laboriosam sunt molestias porro minima atque consequuntur tempora illo, rem illum deserunt eum ab!
+                </p>
+            </section>
+
+            <section class="section" id="news">
+                <h2>News</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laborum. Nulla totam repellendus eius accusantium assumenda laboriosam sunt molestias porro minima atque consequuntur tempora illo, rem illum deserunt eum ab!
+                </p>
+            </section>
+
+            <section class="section" id="contact">
+                <h2>Contact</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, laborum. Nulla totam repellendus eius accusantium assumenda laboriosam sunt molestias porro minima atque consequuntur tempora illo, rem illum deserunt eum ab!
+                </p>
+            </section>
+
+        </div>
+    </div> -->
+    
+    <!-- <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <span class="spinner-border text-success" style="width: 100px; height: 100px; border-width: 10px;"></span>
+    </div> -->
+
+    <!-- <button type="button" class="btn btn-success send">Gửi thông báo <span class="spinner-border text-light spinner-border-sm d-none"></span></button> -->
+    
+     <!-- <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <span class="spinner-grow mx-2 text-primary spinner-grow-sm"></span>
+        <span class="spinner-grow mx-2 text-success"></span>
+        <span class="spinner-grow mx-2 text-danger" style="width: 40px; height: 40px;"></span>
+    </div> -->
+
+    <div class="toast-container">
+        <div class="toast" id="notify" style="position: fixed; bottom: 5px; right: 5px;" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            
+            <strong class="me-auto">Bootstrap</strong>
+            <small class="text-muted">just now</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            See? Just like this.
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+          <p class="p-5">
+            Chào mừng bạn đến với <a href="#" title="Đào tạo lập trình Unicode" data-bs-toggle="tooltip" data-bs-placement="right">Unicode</a>
+          </p>
+      </div>
+
+      <div class="container">
+        <div class="content">
+            <div class="" style="width: 100px; float: left;">
+                  Content
+            </div>
+            <div class="clearfix"></div>
+            <p>Bottom</p>
+            <p class="">
+                <a href="#" class="link-danger">Đào tạo lập trình Unicode</a>
+            </p>
+        </div>
+
+        <!-- <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/e973rDgWcqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+        
+      </div>
+
+      <div class="backtop fixed-bottom">
+          Top
+      </div>
+
+      <div class="container">
+        <div class="hstack gap-1">
+            <div class="bg-primary text-white">First item</div>
+            <div class="bg-primary text-white">Second item</div>
+            <div class="bg-primary text-white">Third item</div>
+           
+          </div>
+
+          <div class="row">
+              <div class="col-4">
+                <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusantium dolorum ipsum, magni labore maxime, provident doloribus quidem, vel iure expedita. Delectus quae sit veniam maiores nesciunt consequuntur sint sapiente?</p>
+              </div>
+              <div class="col-4">
+                <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusantium dolorum ipsum, magni labore maxime, provident doloribus quidem, vel iure expedita. Delectus quae sit veniam maiores nesciunt consequuntur sint sapiente?</p>
+              </div>
+              <div class="col-4">
+                <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusantium dolorum ipsum, magni labore maxime, provident doloribus quidem, vel iure expedita. Delectus quae sit veniam maiores nesciunt consequuntur sint sapiente?</p>
+              </div>
+          </div>
+          
+          <p class="limit-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, modi debitis! Temporibus, neque enim adipisci nam repudiandae accusamus quam necessitatibus et vel error est at ipsa facere quidem molestiae amet?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, modi debitis! Temporibus, neque enim adipisci nam repudiandae accusamus quam necessitatibus et vel error est at ipsa facere quidem molestiae amet?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, modi debitis! Temporibus, neque enim adipisci nam repudiandae accusamus quam necessitatibus et vel error est at ipsa facere quidem molestiae amet?
+          </p>
+
+          <div class="d-flex style="height: 200">
+                <div class="vr" style="margin-right: 10px;"></div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed delectus error illum reiciendis ullam at accusamus cumque nulla quo vel, repudiandae incidunt magnam eius fugit expedita ipsa quas qui.
+          </div>
+          <hr>
+          <div style="width: 400px; height: 200px;" class="block border border-danger border-bottom-0 border-2 rounded-0">
+          </div>
+
+          <div class="flex-container d-flex justify-content-center align-items-center border" style="height: 400px;">
+              <div class="item flex-fill">
+                  Item
+              </div>
+              <div class="item flex-fill">
+                Item
+            </div>
+            <div class="item flex-fill">
+                Item
+            </div>
+            <div class="item flex-fill">
+                Item
+            </div>
+          </div>
+
+          <div class="w-50 border ms-auto me-auto mt-5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quae incidunt, quo iusto tempore atque assumenda deleniti ratione sunt, illum quos deserunt. Magnam earum quod ex at sit vitae ipsum!
+          </div>
+
+          <div class="w-50 border my-5 opacity-5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, quae incidunt, quo iusto tempore atque assumenda deleniti ratione sunt, illum quos deserunt. Magnam earum quod ex at sit vitae ipsum!
+          </div>
+
+          <div class="position-relative border" style="height: 400px;">
+                <h3 class="position-absolute top-50 start-50 translate-middle">Unicode</h3>
+          </div>
+
+          <div style="height: 400px;" class="border border-danger">
+                <div class="h-75 border border-primary">
+                Unicode
+                </div>
+            </div>
+
+            <section class="border border-primary vh-100 d-flex align-items-center justify-content-center">
+                Unicode Academy
+            </section>
+
+            <div class="m-5 border p-3">
+                Unicode Front-End
+            </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

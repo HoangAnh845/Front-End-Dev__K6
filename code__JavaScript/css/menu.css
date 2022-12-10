@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Hahmlet", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.menu-primary {
+    background: green;
+    margin-top: 200px;
+}
+
+.menu-primary ul {
+    list-style: none;
+}
+
+.menu-primary ul.menu>li {
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.menu-primary ul.menu li {
+    position: relative;
+}
+
+.menu-primary ul li a {
+    color: #fff;
+    display: block;
+}
+
+.menu-primary ul.menu ul {
+    display: none;
+    position: absolute;
+    background-color: #ff6347c4;
+    min-width: 200px;
+    top: 100%;
+    left: -20%;
+    z-index: 999;
+}
+
+.menu-primary ul.menu ul li a {
+    display: block;
+    border-bottom: 1px solid #efefef;
+    padding: 5px 10px;
+}
+
+.menu-primary ul.menu ul li a:hover {
+    background-color: green;
+}
+
+
+/*Xử lý khi hover vào menu cấp 1 sẽ xổ menu cấp 2 tương ứng*/
+
+.menu-primary ul.menu>li:hover>ul {
+    display: block;
+}
+
+.menu-primary ul.menu>li>ul li:hover>ul {
+    display: block;
+    left: 100%;
+    top: 0;
+}
+
+
+/*Xử lý thẻ a của menu cấp 1*/
+
+.menu-primary ul.menu>li>a {
+    display: block;
+    padding: 7px 15px;
+    text-transform: uppercase;
+}
+
+.menu-primary ul.menu>li+li>a {
+    border-left: 1px solid #fff;
+}
+
+.menu-primary ul.menu>li>i{
+    margin-top: -25px;
+    margin-right: 2px;
+    float: right;
+    color: #fff;
+}
+
+/*Xử lý khi hover vào thẻ a của menu cấp 1*/
+
+
+/* .menu-primary ul.menu>li>a:hover, */
+
+.menu-primary ul.menu>li:hover>a {
+    color: yellow;
+    background-color: tomato;
+}
+
+.menu img {
+    height: 19px;
+    position: relative;
+    top: 3px;
+}

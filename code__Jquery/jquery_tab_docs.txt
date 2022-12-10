@@ -1,0 +1,56 @@
+HƯỚNG DẪN CÀI ĐẶT PLUGIN JQUERY TAB
+
+Bước 1: HTML
+
+<div class="tabs" id="myTab">
+
+    <nav class="tabs__nav">
+        <ul>
+            <li><a href="#tab_1">Tab 1</a></li>
+            <li class="active"><a href="#tab_2">Tab 2</a></li>
+            <li><a href="#tab_3">Tab 3</a></li>
+            <li><a href="#tab_4">Tab 4</a></li>
+        </ul>
+    </nav>
+    <div class="tabs__content">
+        <div class="tabs--panel" id="tab_1">
+            Nội dung tab 1
+        </div>
+        
+        <div class="tabs--panel" id="tab_3">
+            Nội dung tab 3
+        </div>
+
+        <div class="tabs--panel active" id="tab_2">
+            Nội dung tab 2
+        </div>
+
+        <div class="tabs--panel" id="tab_4">
+            Nội dung tab 4
+        </div>
+    </div>
+           
+</div>
+
+Bước 2: CSS
+
+<link rel="stylesheet" href="css/tab.core.min.css" />
+
+Bước 3: Js
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/tab.jquery.min.js"></script>
+
+Bước 4: Usage
+
+<script>
+    $(document).ready(function(){ 
+        $('myTab').tab({
+            animate: true,
+            animateType: 'fade', //fade, slide, default (hide, show)
+            speed: 'default', //fast, slow, value,... (default=400)
+            style: true, //true, false (Sử dụng css của thư viện)
+        });
+
+    });
+</script>

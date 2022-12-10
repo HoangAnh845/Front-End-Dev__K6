@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 30px 0;
+}
+
+.header .menu-toggle{
+    border: 1px solid green;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid green;
+    color: green;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.primary-menu ul{
+    list-style: none;
+}
+
+.primary-menu a{
+    color: #333;
+    text-decoration: none;
+}
+
+.menu-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+.menu-box .menu-bg{
+    background: rgba(0, 0, 0, 0.55);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+.primary-menu{
+    background: #fff;
+    width: 250px;
+    max-width: 80%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    z-index: 120;
+}
+
+.primary-menu>ul>li>a{
+    display: block;
+    padding: 5px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.primary-menu>ul>li>i{
+    float: right;
+    margin-top: -24px;
+    font-size: 16px;
+    padding: 0px 10px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+
+.primary-menu>ul>li>i.icon-down{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.primary-menu>ul>li ul{
+    background: rgba(51, 51, 51, 0.201);
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+    -webkit-transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+    -moz-transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+    -ms-transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+    -o-transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+}
+
+.primary-menu>ul>li ul>li>a{
+    padding: 10px;
+    display: block;
+}
+
+.primary-menu>ul>li ul.active{
+    max-height: 9999px;
+    transition: max-height 0.4s cubic-bezier(0.5, 0, 1, 0);
+    -webkit-transition: max-height 0.4s cubic-bezier(0.5, 0, 1, 0);
+    -moz-transition: max-height 0.4s cubic-bezier(0.5, 0, 1, 0);
+    -ms-transition: max-height 0.4s cubic-bezier(0.5, 0, 1, 0);
+    -o-transition: max-height 0.4s cubic-bezier(0.5, 0, 1, 0);
+}
+
+.menu-box .close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 32px;
+    z-index: 101;
+}
+

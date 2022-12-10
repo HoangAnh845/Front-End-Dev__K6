@@ -1,0 +1,77 @@
+body{
+	background: #ccc;
+}
+button:not(.empty){
+	cursor: pointer;
+}
+#calculator{
+	background: #fff;
+	width: 400px;
+	height: 600px;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px 1px #333;
+}
+#result{
+	height: 150px;
+	border-bottom: 2px solid #ddd;
+}
+#ex-result{
+	height: 20px;
+	padding-top: 10px;
+	margin: 0 30px;
+	text-align: right;
+	font-size: 22px;
+	color: #ccc;
+}
+#final-result{
+	height: 90px;
+	margin: 20px 30px;
+	text-align: right;
+	font-size: 32px;
+}
+#keyboard{
+	height: 400px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+#keyboard button:not(.empty){
+	background: #ddd;
+}
+#keyboard button{
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	border-radius: 50%;
+	border: none;
+	margin: 20px auto;
+}
+.empty{
+	background: #fff;
+}
+.system:active, .number:active{
+	font-size: 14px;
+}
+button:first-child{
+	background: rebeccapurple !important;
+}
+button:nth-child(4){
+	background: gray !important;
+}
+button:nth-child(8){
+	background: peachpuff !important;
+}
+button:nth-child(12){
+	background: bisque !important;
+}
+button:nth-child(16){
+	background: burlywood !important;
+}
+button:last-child{
+	background: skyblue !important;
+}
+button:not(.empty):hover{
+	background: red !important;
+	color: #fff;
+}

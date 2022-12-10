@@ -1,0 +1,173 @@
+/*
+File này code các thành phần reset CSS, định nghĩa font-face
+*/
+
+/*Reset chung tất cả thành phầ*/
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+/*Thiết lập các thành phần dùng chung*/
+
+body {
+  color: var(--base-color);
+  font-family: "Lato Regular", sans-serif;
+  font-size: 14px;
+  line-height: 1.1;
+  overflow-x: hidden;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading-color);
+} */
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+ul,
+ol {
+  list-style: none inside;
+  margin: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+    margin-left: -97px;
+    margin-right: -84px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+
+.container {
+  max-width: 1170px;
+  height: 775px;
+  margin: 0 auto;
+}
+
+.section-box {
+  padding: 30px 0px;
+}
+
+.preloader{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, #ee0979 0%, #ff6a00 100%) repeat scroll 0 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: all 2s linear;
+  -webkit-transition: all 2s linear;
+  -moz-transition: all 2s linear;
+  -ms-transition: all 2s linear;
+  -o-transition: all 2s linear;
+}
+p{
+  line-height: 40px;
+}
+
+.back-to-top{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100px;
+  opacity: 0;
+  padding: 10px ;
+  background: rgba(0, 0, 0, 0)
+   linear-gradient(to right, #ee0979 0%, #ff6a00 100%) repeat scroll 0 0;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0)
+   linear-gradient(to right, #ee0979 0%, #ff6a00 100%) repeat scroll 0 0;
+}
+
+.header .header-logo{
+    float: left;
+    margin: 7px 193px;
+}
+.header .header-list{
+    float: right;
+}
+
+.header .header-list ul li{
+    display: inline-block;
+    margin: 10px;
+}
+.header .header-list ul>li>a{
+    padding: 15px;
+   
+}
+
+.header .header-list ul>li>a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.header  .header--main{
+    margin: 100px;
+}
+
+.header  .header--main .col_item--1{
+    margin-top: 70px;
+}
+.header  .header--main .col_item--1 h1{
+    color: #fff;
+    font-size: 50px;
+    padding: 27px;
+}
+.header  .header--main .col_item--1 p{
+    color: #fff;
+    font-size: 20px;
+    padding: 29px;
+    font-weight: bold;
+}
+.header  .header--main  .main-img{
+    justify-content: space-evenly;
+    padding: 35px;
+}
+
+/* --------------------------------------- */
+
+.main{
+  margin-top: 70px;
+}
+
+.main .main__item1{
+  padding-top: 100px;
+}
+
+.main .main__item1 .item1-title{
+  border-bottom: 1px solid black;
+  padding: 10px 0px;
+}
+
+.main .main__item1 .item1-text{
+  padding-top: 18px;
+  
+}

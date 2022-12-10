@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Form jQuery</title>
+    <style>
+        input.error{
+            border: 1px solid red;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="msg"></div>
+    <form class="cmxform" id="commentForm" method="get" action="">
+        <fieldset>
+          <legend>Please provide your name, email address (won't be published) and a comment</legend>
+          <p>
+            <label for="cname">Name (required, at least 2 characters)</label>
+            <input id="cname" name="name" minlength="2" type="text">
+          </p>
+          <p>
+            <label for="cemail">E-Mail (required)</label>
+            <input id="cemail" type="text" name="email">
+          </p>
+          <p>
+            <label for="curl">Tuổi</label>
+            <input id="curl" type="number" name="age">
+          </p>
+          <p>
+            <label for="ccomment">Your comment (required)</label>
+            <textarea id="ccomment" name="comment"></textarea>
+          </p>
+          <p>
+            <input class="submit" type="submit" value="Submit">
+          </p>
+        </fieldset>
+      </form>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script>
+
+        $.validator.addMethod("greaterThanZero", function(value, element) {
+            
+           if (parseInt(value)<0){
+                return true;
+           }
+
+           return false;
+        }, "* Phải là số âm");
+
+        $("#commentForm").validate({
+
+            rules: {
+                // simple rule, converted to {required:true}
+                name: "required",
+                // compound rule
+                email: {
+                required: true,
+                email: true
+                },
+                // age: {
+                //     required: true,
+                //     min: 30
+                // },
+                age: {
+                    greaterThanZero: true
+                }
+            },
+
+            messages: {
+                name: "Vui lòng nhập tên",
+                email: {
+                required: "Vui lòng nhập email",
+                email: "Địa chỉ email không hợp lệ"
+                }
+                // age: {
+                //     min: "Tuổi phải lớn hơn hoặc bằng 30"
+                // }
+            },
+            invalidHandler: function(event, validator) {
+                    // 'this' refers to the form
+                    var errors = validator.numberOfInvalids(); //Hiển thị số lỗi
+                    //console.log(validator);
+                    if (errors) {
+                        if (errors>0){
+                            $('.msg').html(`Đã có ${errors} xảy ra`);
+                        }else{
+                            $('.msg').html('');
+                        }
+                        
+                    }else{
+                        $('.msg').html('');
+                    }
+                },
+
+            submitHandler: function(form) {
+                // some other code
+                // maybe disabling submit button
+                // then:
+                //$(form).submit();
+                alert('Validate thành công');
+                $('.msg').html('');
+            }
+            });
+    </script>
+</body>
+</html>

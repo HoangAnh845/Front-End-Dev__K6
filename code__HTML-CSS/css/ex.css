@@ -1,0 +1,50 @@
+body{
+	background: url('../images/image01.jpeg') no-repeat;
+	background-size: cover;
+}
+.register{
+	background: #00d6ef99;
+}
+.page-title{
+	color: green;
+	border-bottom: 2px solid red;
+}
+
+.page-title span{
+	border-bottom: 2px solid green;
+	border-top: 2px dashed green;
+	border-right: 2px dashed green;
+	border-left: 2px dashed green;
+}
+
+.register label{
+	font-weight: bold;
+	font-style: italic;
+}
+
+.register .form-group{
+	border-bottom: 1px dotted green;
+}
+
+.register .form-control{
+	width: 90%;
+	height: 28px;
+	border: 1px solid red;
+	background: #ffeb3b61;
+	color: #fff;
+	font-style: italic;
+}
+
+.register .button-wrapper td{
+	border-top: 1px solid green;
+}
+
+.register .button-wrapper button{
+	background: #00800073;
+	border: none;
+	color: #fff;
+	font-size: 110%;
+	width: 200px;
+	height: 30px;
+
+}

@@ -1,0 +1,42 @@
+ ER Diagrams Intro
+
+1, Mục đích:
+- Được sử dụng để mô tả dữ liệu và cách các phần dữ liệu 
+tương tác với nhau. Giúp hình dung rõ ràng về thiết kế 
+cơ sở dữ liệu của mình
+
+2, Thành phần của sơ đồ ER:
+- Thực thể(Entity) chỉ một đối tượng mà chúng ta muốn mô 
+hình hóa và lưu trữ thông tin
+- Thuộc tính(Attributes) là những phần thông tin cụ thể 
+về một thực thể
+- Khóa chính(Primary Key) là một thuộc tính sẽ xác định
+duy nhất một mục nhập trong bảng csdl
+- Thuộc tính tổng hợp(Composite Attribute) là một thuộc 
+tính có thể chia thành các thuộc tính phụ 
+- Thuộc tính đa giá trị(Multi-valued Attribute) một thuộc
+tính có thể có nhiều giá trị (VD: một sinh viên có thể 
+tham gia nhiều clb)
+- Thuộc tính bắt nguồn(Derived Attribute) chỉ thuộc tính
+có thể được bắt nguồn từ các thuộc tính khác 
+
+3, Mối quan hệ trong sơ đồ ER
+- Mục đích: thể hiện sự liên kết giữa các loại thự thể
+VD: "Đồ ăn yêu thích" là ví dụ một tên của mối quan hệ 
+giữa "Cái mồm" và "Suy nghĩ"
+- Kiểu quan hệ 1-1: Khi mỗi thực thể chỉ có thẻ tham gia
+một lần vào mối quan hệ, bản số là một đối một
+VD: nam chỉ có thể kết hôn một nữ và ngược lại sẽ 1-1
+- Kiểu quan hệ many-1: thực thể có thể chỉ có thể tham
+gia một lần vào tập hợp quan hệ và các thực thể khác có 
+thể tham gia nhiều hơn một lần vào tập quan hệ 
+VD: một học sinh chỉ có thể học một khóa học nhưng một khóa 
+học có thể được học bởi nhiều học sinh. Vì vậy, hệ số sẽ 
+là n đến 1. 
+- Kiểu quan hệ 1-many: thực thể có thêm gia vào một mối quan
+hệ và có thể thực hiện quan hệ với các thực thể khác
+VD: một sinh viên có thể tham gia nhiều khóa học
+- Kiểu quan hệ many-many: Các thực thể có thể tham gia nhiều
+hơn một lần vào mối quan hệ. Tính chất là nhiều đến nhiều
+VD: Giả sử rằng một sinh viên có thể học nhiều hơn một khóa học
+và một khóa học có thể được thực hiện bởi nhiều sinh viên

@@ -1,0 +1,81 @@
+.page-select{
+    text-align: center;
+}
+.page-select span{
+    display: inline-block;
+    padding: 5px;
+    padding-top: 7px;
+    width: 22px;
+    height: 20px;
+    margin: 5px 5px;
+    border-radius: 50%;
+    background: rgb(255, 212, 126);
+    /* //transition: all 0.2s linear; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.page-select span:hover{
+    background: rgb(122, 102, 60);
+}
+.page-select span.active{
+    background: rgb(122, 102, 60);
+}
+.page-select span.can-hide{
+    width: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.page-select span.dot{
+    background: inherit;
+}
+/* .page-select span.can-hide::before{
+    content: '.';
+    width: 5px;
+    height: 5px;
+    display: block;
+} */
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.result table{
+    width: 100%;
+}
+table{
+    transition: all 0.5s linear;
+}
+span{
+    user-select: none;
+}
+
+.result table thead *{
+    user-select: none;
+}
+
+.result table thead .nameButton{
+    cursor: pointer;
+}
+.result table thead .nameButton:hover{
+    background-color: burlywood;
+}
+
+.result table thead .emailButton{
+    cursor: pointer;
+}
+.result table thead .emailButton:hover{
+    background-color: burlywood;
+}
+.result table thead .phoneButton{
+    cursor: pointer;
+}
+.result table thead .phoneButton:hover{
+    background-color: burlywood;
+}
+
+.result table thead .cityButton{
+    cursor: pointer;
+}
+.result table thead .cityButton:hover{
+    background-color: burlywood;
+}

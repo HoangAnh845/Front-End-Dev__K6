@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.box, section, .container {
+  background-color: green;
+  padding: 20px 0px;
+  font-size: 20px;
+  color: #fff; }
+
+section, .container {
+  border: 1px solid red; }
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  list-style-position: inside;
+  border: 1px solid red;
+  box-sizing: border-box;
+  width: 300px;
+  max-width: 300px;
+  height: 0;
+  min-height: 0;
+  background-color: green;
+  color: #fff; }
+
+.section-box {
+  width: 500px;
+  max-width: 500px;
+  height: 0;
+  min-height: 0;
+  margin: 0 auto;
+  width: 1170px;
+  border: 1px solid red; }
+
+.news-box {
+  width: 200px;
+  max-width: 200px;
+  height: 1000px;
+  min-height: 1000px;
+  margin: 0 auto;
+  width: 1170px;
+  color: red; }
+
+ul, .title-box {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+ul {
+  position: relative;
+  top: 200px;
+  left: 0;
+  right: 0; }
+
+.title-box {
+  margin-left: auto;
+  margin-right: auto; }
+
+.row .col {
+  padding: 0px 10px;
+  float: left;
+  width: 25%; }
+
+.block {
+  position: absolute;
+  left: 10px;
+  top: 20px; }
+
+/*
+Thực hành:
+- Viết 1 mixin để tính toán padding dựa vào số lượng cột
+- 1 cột => padding = 0
+- 2 cột => padding = 10
+- 3 cột => padding = 20
+- Trường hợp còn lại => padding = 15
+*/
+.content {
+  padding: 0 20px; }

@@ -1,0 +1,128 @@
+
+// biến scss
+$background: greenyellow;
+$Width: 700px;
+$fontSize: 20px;
+$a: 40px;
+$b: 30px;
+
+// thành phần cha con
+.warp {
+  width: $Width;
+  height: auto;
+  $c: 0px;
+  margin: $c auto;
+  background-color: $background;
+  .warp-item {
+    border: 1px solid rgb(196, 32, 218);
+    padding: $a $b;
+  }
+  span {
+    display: block;
+    color: black;
+    text-align: center;
+    font: {
+      size: $fontSize;
+      family: "Roboto", sans-serif;
+      weight: normal;
+    }
+    background: {
+      color: rgb(255, 115, 0);
+    }
+  }
+}
+
+// Phân cấp theo tag
+.hierarchy {
+  width: $Width;
+  text-align: center;
+  h2 {
+    color: rebeccapurple;
+  }
+  input {
+    margin: {
+      left: 20px;
+      bottom: 20px;
+    }
+    padding: {
+      top: 10px;
+      bottom: 10px;
+    }
+
+    text: {
+      align: center;
+    }
+    border: {
+      color: orange;
+      radius: 20px;
+    }
+  }
+}
+
+//Phân cấp theo đại diện
+.represent {
+  margin-top: 20px;
+  h2 {
+    color: rebeccapurple;
+    @extend .hierarchy;
+  }
+  .represent-button {
+    text-align: center;
+    button {
+      padding: 10px 50px;
+      border: {
+        color: blue;
+        style: solid;
+      }
+      background-color: orange;
+      color: blue;
+      font: {
+        weight: 600;
+        size: 15px;
+      }
+      &:hover{
+        background-color: cornflowerblue;
+      }
+    }
+    cursor: pointer;
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px auto;
+      width: 82%;
+      span {
+        display: inline-block;
+
+        border: {
+          // color:#7d007f ;
+          radius: 20px;
+        }
+        padding: 10px 10px;
+        margin: {
+            bottom: 20px;
+        };
+        font: {
+          size: $fontSize;
+          weight: 600;
+        }
+        line-height: 30px;
+        &:nth-child(2){
+            background-color: #ea4c88;
+        }
+        &:nth-last-child(1){
+            background-color: #ea4c88;
+        }
+      }
+   
+    }
+  
+  }
+  
+}
+
+// Phân cấp theo @media (Responsive)
+.media{
+    width: 500px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}

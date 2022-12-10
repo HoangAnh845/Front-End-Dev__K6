@@ -1,0 +1,77 @@
+@import 'reset';
+@import 'base';
+
+$start: 1;
+$length: 12;
+
+%reset-col {
+    padding: 0 10px;
+    float: left;
+}
+
+@for $index from $start through $length{
+    .col-lg-#{$index}{
+        $width: $index/$length*100%;
+        width: $width;
+        @extend %reset-col;
+    }
+
+    .col-md-#{$index}{
+        @extend %reset-col;
+    }
+}
+
+//Vòng lặp while
+$index: 1;
+@while ($index <= $length){
+    @if ($index>0){
+        .item-#{$index}{
+            width: $index/12*100%;
+            float: left;
+        }
+    }
+
+    $index:$index+2; //Tăng biến $index để vòng lặp dừng lại
+}
+
+//Vòng lặp each (1 giá trị)
+$sizes: small, medium, large, bigsmall; //Giống như 1 mảng
+$sizeBase: 10px;
+// @each $size in $sizes {
+//     .block-#{$size}{
+//         $width: 0;
+//         @if ($size=='small'){
+//            $width: $sizeBase*2;
+//         }@else if($size=='medium'){
+//             $width: $sizeBase*4;
+//         }@else if ($size=='bigsmall'){
+//             $width: $sizeBase*7;
+//         }@else{
+//             $width: $sizeBase*6;
+//         }
+
+//         width: $width;
+//     }
+// }
+
+//Vòng lặp each (nhiều giá trị)
+$sizes: (small, normal, 20px, 50%), (medium, bold, 40px, 70%), (large, bolder, 80px, 100%);
+
+// @each $class, $weight, $size, $width in $sizes {
+//     .block-#{$class}{
+//         font-weight: $weight;
+//         font-size: $size;
+//         width: $width;
+//     }
+// }
+
+//Vòng lặp each (Giá trị map)
+//Giá trị map = key: value
+
+$sizes: (small: 20px, medium: 40px, large: 60px, biglarge: 80px);
+
+@each $class, $size in $sizes {
+    .block-#{$class}{
+        font-size: $size;
+    }
+}

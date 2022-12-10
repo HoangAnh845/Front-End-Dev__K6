@@ -1,0 +1,30 @@
+html {
+    height: 4000px;
+  }
+  .product-item {
+    border: 1px solid red;
+  }
+  
+  .p{
+    padding: 7px 22px !important;
+  }
+  
+  .pr{
+      padding-right: 7px !important;
+  }
+  
+  .m{
+    margin: 10px 10px !important;
+  }
+  
+  .images_controls{
+      position: relative;
+  }
+  
+  .controls{
+      position: absolute;
+      top: 23px;
+      bottom: 0;
+  }
+  
+  

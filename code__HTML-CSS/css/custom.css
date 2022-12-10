@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/*Khai báo biến*/
+/*Header -- Begin*/
+.header .header__logo {
+  padding: 30px 15px;
+  font-family: "Roboto", sans-serif; }
+  .header .header__logo img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); }
+
+.header .header__hotline {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px; }
+  .header .header__hotline .header__hotline--text {
+    color: red;
+    border: 1px solid green; }
+
+/*Header -- End*/
+/*Slide -- Begin*/
+.slideshow {
+  position: relative; }
+  .slideshow img {
+    max-width: 100%;
+    height: auto;
+    padding: 20px; }
+  .slideshow .slideshow__controls {
+    position: absolute;
+    top: 40%;
+    z-index: 999; }
+
+/*Slide -- End*/
+body {
+  font-family: "Roboto", sans-serif;
+  color: #ff0000; }
+
+.container {
+  max-width: 1015px;
+  padding: 30px;
+  width: 2em;
+  font-family: Roboto, Arial, sans-serif;
+  content: "Bài giảng 1"; }
+
+.list.detail {
+  color: red; }
+
+.list .item {
+  color: green; }
+
+.list:before {
+  content: '';
+  display: block; }
+
+.list:hover {
+  background: blue; }
+
+.list:nth-child(2n+1) {
+  border: 1px solid red; }
+
+@media all and (max-width: 767px) {
+  .list {
+    max-width: 100%;
+    padding: 0 15px; } }
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .list {
+    padding: 0 20px; } }
+
+#toggle-menu ~ input[type="checkbox"] {
+  display: block; }
+  @media all and (max-width: 767px) {
+    #toggle-menu ~ input[type="checkbox"] {
+      border: 1px solid red; } }
+
+@media all and (max-width: 767px) {
+  #toggle-menu {
+    display: none; } }
+
+@media all and (max-width: 1200) {
+  #toggle-menu {
+    display: block; } }

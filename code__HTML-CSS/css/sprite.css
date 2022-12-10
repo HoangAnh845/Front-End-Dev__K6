@@ -1,0 +1,30 @@
+body{
+	background-color: #ffd800;
+}
+
+.icon::before{
+	content: '';
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: url('../images/icon_ancasa.png');
+	background-repeat: no-repeat;
+	float: left;
+	margin-right: 10px;
+}
+
+.icon{
+	line-height: 30px;
+}
+
+.phone::before{
+	background-position: -59px 0px;
+}
+
+.address::before{
+	background-position: -324px 0px;
+}
+
+.email::before{
+	background-position: -474px 0px;
+}

@@ -1,0 +1,184 @@
+/* 
+Ghi chú:
+- Các loại màn hình khi làm việc với Responsive
+ + Không có màn hình cố định khi làm việc với Responsive ( phụ thuộc vào độ phực tạp của dự án)
+ + Tất cả các màn hình trong các dự án chỉ mang tính tương đối
+ + Một số loại màn hình phổ biến 
+  
+  1. Màn hình mobile 
+  -Chiều dọc:
+  @media all and (max width: 320px) {}
+  -Chiều ngang:
+  @media all and (min-width: 321px) and (max-width: 480px) {}
+  2. Máy tính bảng 
+  -Chiều dọc:
+  @media all and (max-width: 480px) {}
+  -Chiều ngang:
+  @media all and (min-width: 481px) and (max-width: 600px) {}
+  3. Máy tính bảng loại to
+  -Chiều dọc:
+   @media all and (max width: 600px) {}
+  -Chiều ngang:
+   @media all and (min-width: 601px) and (max-width: 768px) {}
+  4. Màn hình máy tính nhỏ 
+  -Chiều dọc:
+   @media all and (max-width: 768px) {}
+  -Chiều ngang:
+   @media all and (min-width: 769px) and (max-width: 1024px) {}
+
+- Lời khuyên khi viết Responsive
+ + Nên sử dụng đơn vị tương đối (%)
+ + Nên sử dụng max-width
+ + Kết hợp display: none và display: block để ẩn hiên hiện trên các màn hình 
+ + Sử dụng !important để ưu tiên hiện thị 
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-size: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.col {
+  float: left;
+  width: 20%;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 6px 10px;
+  min-height: 1px;
+  background: greenyellow;
+  border: 1px solid #333;
+  position: relative;
+}
+
+.menu .col:hover .item{
+    display: block;
+}
+
+.row::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+.menu .item{
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    background: burlywood;
+    width: 100%;
+    display: none;
+}
+
+.menu .item li{
+    padding: 6px 6px;
+    text-align: left;
+}
+
+.menu_reponsive{
+    width: 100%;
+    background: #333;   
+    color: white;
+    display: none;
+}
+
+.menu_reponsive span{
+    display: inline-block;
+
+}
+
+.menu_reponsive span:nth-child(1){
+    width: 10%;
+    text-align: center;
+    padding: 10px 20px;
+    background: #04AA6D;
+}
+
+.menu_reponsive span:nth-child(2){
+   width:50%;
+}
+
+.menu_reponsive span:nth-child(3){
+    width: 38%;
+    text-align: right;
+}
+
+.menu .item .fas{
+    display: none;
+}
+
+/* Reponsive */
+
+/* 3. Máy tính bảng loại to */
+/* -Chiều dọc: */
+@media all and (max-width: 600px) {
+    .menu_reponsive{
+        display: block;
+    }
+    .menu_reponsive span:nth-child(1){
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+    .menu ul li{
+        width: 100%;
+        text-align: left;
+    }
+    .menu ul li a{
+        padding-left: 5px;
+    }
+    .menu .item{
+        z-index: 99;
+        left: 0;
+        color: rebeccapurple;
+        padding: 10px 10px;
+        display: none;
+    }
+
+    .menu .item .fas{
+        display: block;
+    }
+}
+/* -Chiều ngang: */
+/* @media all and (min-width: 601px) and (max-width: 768px) {} */
+
+

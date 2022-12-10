@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Validate Form jQuery</title>
+    </head>
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .container {
+            width: 100%;
+            background-color: #F44336;
+        }
+
+        .container #myDIV {
+            padding: 31px 39px;
+            text-align: center;
+            color: white;
+        }
+
+        .container #myDIV form {
+            display: flex;
+            width: 100%;
+        }
+
+        .container #myDIV form input {
+            width: 75%;
+            border: none;
+            padding: 10px 8px;
+        }
+
+        .container #myDIV form button {
+            width: 25%;
+            border: none;
+            background-color: #bbbbbbf3;
+            padding: 10px 0px;
+            cursor: pointer;
+        }
+
+        .container #myUL .text{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+        
+        .container #myUL .text span{
+            display: block;
+            padding: 10px 0px;
+            background: greenyellow;
+        }
+
+        .container #myUL .text span:nth-child(1){
+            width: 88%;
+            padding-left: 10px;
+        }
+
+        .container #myUL .text span:nth-child(2){
+            padding-right: 15px;
+            cursor: pointer;
+        }
+    </style>
+
+    <body>
+        <section>
+            <div class="container">
+                <div id="myDIV">
+                    <h2>My To Do List</h2>
+                    <form action="">
+                        <input type="text" id="myInput" placeholder="Title..." value="">
+                        <button>Add</button>
+                    </form>
+                </div>
+                <div id="myUL">
+                   
+                </div>
+            </div>
+        </section>
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/traing.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "chat": [
+    {
+      "fullName": "Hoàng Anh",
+      "msg": "alo cậu ",
+      "create": "9/10/202113:47:38",
+      "id": 1
+    },
+    {
+      "fullName": "Người máy ",
+      "msg": "lô ",
+      "create": "9/10/202113:58:37",
+      "id": 2
+    }
+  ]
+}

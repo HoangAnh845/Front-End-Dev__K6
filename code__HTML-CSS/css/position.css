@@ -1,0 +1,139 @@
+/*
+Position relative: Sẽ thay đổi vị trí và giữ nguyên bố cục ban đầu
++ Position relative sẽ được dùng để căn vị trí: left và top
++ Các thành phần có position sẽ ưu tiên nằm trên các thành phần không có position
++ Các thành phần đều có position thì sẽ ưu tiên thành phần nào có z-index cao hơn
++ z-index chỉ tồn tại khi có thuộc tính position
++ Các giá trị: left, right, top, bottom, z-index đều chấp nhận giá trị âm
+
+Position relative và margin sẽ khác nhau về sự thay đổi bố cục ban đầu
++ Position relative: Giữ nguyên vị trí bố cục ban đầu
++ Margin: Thay đổi vị trí bố cục ban đầu (Các thành phần liền kết với nó sẽ bị di chuyển nếu có margin)
+
+Position absolute: Sẽ thay đổi vị trí và không giữ nguyên giá trị bố cục ban đầu
++ Giá trị này sẽ thay đổi linh hoạt các thành phần theo body
++ Giá trị này sẽ nhận thẻ body làm mẹ
++ Nếu left và right cùng tồn tại => Ưu tiên left
++ Nếu top và bottom cùng tồn tại => Ưu tiên top
++ Nếu muốn position absolute nhận thẻ bất kỳ làm mẹ => Cần set cho thẻ đó giá trị position: relative
+*/
+.block-1{
+    background: green;
+    color: #fff;
+    font-size: 1.5em;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    /* z-index: 1; */
+    left: 0;
+    top: 20px;
+    /* margin-left: 20px;
+    margin-top: 40px; */
+
+}
+
+.block-2{
+    background: red;
+    color: #fff;
+    font-size: 1.5em;
+    width: 200px;
+    height: 200px;
+    float: left;
+    position: relative;
+    left: -20px;
+    top: -40px;
+    /* z-index: 2; */
+}
+
+.block-3{
+    background: blue;
+    color: #fff;
+    font-size: 1.5em;
+    width: 200px;
+    height: 200px;
+    float: left;
+    position: relative;
+}
+
+.clear{
+    clear: both;
+}
+
+.wrapper{
+    border: 1px solid red;
+    width: 400px;
+    height: 400px;;
+    margin-top: 30px;
+    margin-left: 30%;
+    position: relative;
+}
+
+.block-4{
+    background: palevioletred;
+    color: #fff;
+    font-size: 1.5em;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.product-item{
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    text-align: center;
+    position: relative;
+}
+
+.product-item .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #7fff0069;
+    display: none;
+}
+
+.product-item:hover .overlay{
+    display: block;
+}
+
+.block-2{
+    position: static;
+}
+
+.back-to-top a{
+    background: red;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99;
+}
+
+header{
+    background: #adff2fd6;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 20px 0px;
+    z-index: 99;
+}
+
+body{
+    padding-top: 68px;
+}

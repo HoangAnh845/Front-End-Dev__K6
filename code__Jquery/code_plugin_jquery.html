@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học viết Plugin jQuery</title>
+    
+    <style>
+        .container{
+            max-width: 500px;
+            margin: 30px auto;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/tab.core.min.css" />
+</head>
+<body>
+    
+    <div class="container">
+        <div class="tabs" id="tabs_product">
+
+                <nav class="tabs__nav">
+                    <ul>
+                        <li><a href="#tab_1">Tab 1</a></li>
+                        <li class="active"><a href="#tab_2">Tab 2</a></li>
+                        <li><a href="#tab_3">Tab 3</a></li>
+                        <li><a href="#tab_4">Tab 4</a></li>
+                    </ul>
+                </nav>
+                <div class="tabs__content">
+                    <div class="tabs--panel" id="tab_1">
+                        Nội dung tab 1
+                    </div>
+                    
+                    <div class="tabs--panel" id="tab_3">
+                        Nội dung tab 3
+                    </div>
+        
+                    <div class="tabs--panel active" id="tab_2">
+                        Nội dung tab 2
+                    </div>
+        
+                    <div class="tabs--panel" id="tab_4">
+                        Nội dung tab 4
+                    </div>
+                </div>
+           
+        </div>
+
+        <div class="tabs" id="tabs_product2">
+            
+                <nav class="tabs__nav">
+                    <ul>
+                        <li><a href="#tab_1">Tab 1</a></li>
+                        <li class="active"><a href="#tab_2">Tab 2</a></li>
+                        <li><a href="#tab_3">Tab 3</a></li>
+                        <li><a href="#tab_4">Tab 4</a></li>
+                    </ul>
+                </nav>
+                <div class="tabs__content">
+                    <div class="tabs--panel" id="tab_1">
+                        Nội dung tab 1
+                    </div>
+                    
+                    <div class="tabs--panel" id="tab_3">
+                        Nội dung tab 3
+                    </div>
+        
+                    <div class="tabs--panel active" id="tab_2">
+                        Nội dung tab 2
+                    </div>
+        
+                    <div class="tabs--panel" id="tab_4">
+                        Nội dung tab 4
+                    </div>
+                </div>
+           
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/tab.jquery.min.js"></script>
+    <script>
+        //Gọi hàm để sử dụng plugin jQuery
+        $(document).ready(function(){
+            
+            $('.tabs').tab({
+                animate: true,
+                animateType: 'fade', //fade, slide, default (hide, show)
+                speed: 'default', //fast, slow, value,... (default=400)
+                style: true, //true, false (Sử dụng css của thư viện)
+            });
+
+            // $('#tabs_product2').tab({
+            //     animate: true,
+            //     animateType: 'slide',
+            //     style: true, //true, false (Sử dụng css của thư viện)
+               
+            // });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "products": [
+    {
+      "name": "Sản phẩm 5",
+      "price": "10000",
+      "desc": "Test sản phẩm 4",
+      "id": 6
+    },
+    {
+      "name": "Ấm siêu tốc",
+      "price": "12000",
+      "desc": "test sp",
+      "id": 7
+    },
+    {
+      "name": "chảo chống dính",
+      "price": "20000",
+      "desc": "test chảo chống dính",
+      "id": 8
+    },
+    {
+      "name": "Bánh kẹo",
+      "price": "20000",
+      "desc": "Mô tả bánh kẹo",
+      "id": 9
+    }
+  ]
+}

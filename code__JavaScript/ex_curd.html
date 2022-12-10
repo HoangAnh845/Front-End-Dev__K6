@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành thêm, sửa, xoá, hiển thị (CURD)</title>
+</head>
+<body>
+    <h1>DANH SÁCH SẢN PHẨM</h1>
+    <div class="msg" style="color: red;"></div>
+    <div class="template-list">
+        <a href="#add">Thêm sản phẩm</a>
+        <table id="product-list" width="100%" border="1">
+            <thead>
+                <tr>
+                    <th width="5%">STT</th>
+                    <th>Tên</th>
+                    <th>Giá</th>
+                    <th>Mô tả</th>
+                    <th width="5%">Sửa</th>
+                    <th width="5%">Xoá</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    
+    </div>
+    
+    <div class="template-add" data-type="add" style="display: none;">
+        <button type="button" class="back-list">Quay lại danh sách</button>
+        <form action="">
+            <input type="text" id="name" placeholder="Tên sản phẩm..."/> <br/>
+            <input type="text" id="price" placeholder="Giá sản phẩm..."> <br/>
+            <textarea id="desc" placeholder="Mô tả..."></textarea> <br/>
+        
+            <button type="submit" class="confirm">Đăng sản phẩm</button>
+        </form>
+    </div>
+    <script src="js/curd.js"></script>
+</body>
+</html>

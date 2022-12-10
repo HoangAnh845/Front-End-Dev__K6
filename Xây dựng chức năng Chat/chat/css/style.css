@@ -1,0 +1,31 @@
+.chat{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.msg-content{
+    height: 400px;
+    background-color:#efefef;
+    overflow-y: auto;
+}
+
+.msg-content .msg-item{
+    background:cornflowerblue ;
+    color: #fff;
+    width: 90%;
+    margin: 26px auto;
+    padding: 5px 10px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    position: relative;
+}
+
+.msg-content .msg-item label{
+    position: absolute;
+    bottom: -28px;
+    color: #333;
+    font-size: 12px;
+}

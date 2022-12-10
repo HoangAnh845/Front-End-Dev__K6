@@ -1,0 +1,57 @@
+body{
+    background-color: rgba(0, 0, 0, 0.673);
+}
+
+.wrapper{
+    width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 10px;
+}
+
+.wrapper h3{
+    text-align: center;
+}
+
+.input-wrap{
+    display: flex;
+}
+
+.input-wrap input{
+    flex-basis: 80%;
+}
+
+.input-wrap button{
+    flex-basis: 20%;
+}
+
+.to-do-list{
+    margin: 10px 0;
+}
+
+.to-do-list .item{
+    background: #ccc;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.to-do-list .item .content{
+    flex-basis: 85%;
+}
+
+.to-do-list .item .action{
+    flex-basis: 15%;
+}
+
+.to-do-list .item .action span{
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+.clear-all{
+    text-align: center;
+    color: red;
+    cursor: pointer;
+}
+

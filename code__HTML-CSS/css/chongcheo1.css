@@ -1,0 +1,12 @@
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+p#text.text {
+    color: red;
+}
+
+#text.text4 {
+    color: green;
+}

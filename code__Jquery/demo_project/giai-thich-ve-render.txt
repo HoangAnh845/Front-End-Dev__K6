@@ -1,0 +1,14 @@
+Load ra html bằng Javascript => client side rendering
++ tốc độ nhanh (Cần thành phần nào, load ra thành đó)
++ mượt hơn
++ Không load lại trang
++ Không tốt cho SEO
+
+=> Single Page Application (SPA)
+
+Load ra html bằng back-end => server side rendering
++ Tốc độ chậm (Tải tất cả cả các thành phần)
++ trẩi nghiệm người dùng không tốt
++ Tốt cho SEO
+
+=> Multil Page Application (MPA)

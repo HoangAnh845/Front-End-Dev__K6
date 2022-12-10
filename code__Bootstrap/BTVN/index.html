@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <h2 class="float-start">Kiểm định xe</h2>
+                </div>
+                <div class="col text-end m">
+                    <i class="fas fa-home"></i>
+                    <span>&#8725; Kiểm định xe</span>
+                </div>
+            </div>
+            <!-- End title -->
+
+            <hr>
+
+            <form action="">
+                <div class="d-flex bd-highlight mb-3">
+                    <div class="me-auto p-2 bd-highlight">
+                        <select name="" id="" class="form-control-sm  p" style="box-shadow:0px 0px 22px 0px #4291e1; border: 2px solid #4291e1; border-radius: 7px;">
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                        </select>
+                    </div>
+                    <div class="p-2 bd-highlight d-flex" style="width: 685px;">
+                        <input  style="width: 400px;" class="form-control form-control-sm m" type="text" placeholder="Từ khóa tìm kiếm...">
+                        <button type="button" class="m btn btn-primary">Tìm kiếm</button>
+                        <button class="m btn btn-primary">Thêm mới <i class="fas fa-plus"></i></button>
+                    </div>
+                </div>              
+            </form>
+            <!-- End form -->
+
+            <table class="table table-danger table-bordered border-light">
+                <thead class="table-light border-2" style="border-top:2px solid #0d6efd ;">
+                    <tr>
+                        <th>STT</th>
+                        <th>Thời gian</th>
+                        <th>Giờ xe ra</th>
+                        <th>Biển số xe</th>
+                        <th>Hình ảnh</th>
+                        <th>Chủ quản phương tiện</th>
+                        <th>Người đi đăng kiểm</th>
+                        <th>Ghi chú</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            03/04/2021<br>
+                            09:22:02
+                        </td>
+                        <td>
+                            14/04/2021<br>
+                            10:23:06
+                        </td>
+                        <td class="text-primary">29P120081</td>
+                        <td class="images_controls">
+                            <img class="rounded mx-auto d-block my-2" style="width: 47px;"
+                                src="images/Sh-125i.jpg"
+                                alt="">
+                            <div class="controls">
+                                <i class="fas fa-chevron-circle-left"></i>
+                                <span style="display: inline-block; padding-right: 47px;"></span>
+                                <i class="fas fa-chevron-circle-right"></i>
+                            </div>
+                        </td>
+                        <td>Tạ Hoàng An</td>
+                        <td>Tạ Hoàng An</td>
+                        <td></td>
+                        <td>
+                            <span class="p m"
+                                style="background: greenyellow; border-radius: 10px; display: inline-block;">
+                                <i class="fas fa-cog text-light"></i>
+                            </span>
+                            <span class="p" style="background: #4291e1;border-radius: 10px; display: inline-block;"><i
+                                    class="fas fa-sign-out-alt text-light pr"></i>Ra xe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            31/03/2021<br>
+                            10:17:53
+                        </td>
+                        <td>
+                            31/03/2021<br>
+                            10:48:44
+                        </td>
+                        <td class="text-primary">29P120041</td>
+                        <td></td>
+                        <td>Tạ Hoàng An</td>
+                        <td>Tạ Hoàng An</td>
+                        <td></td>
+                        <td>
+                            <span class="p m"
+                                style="background: greenyellow; border-radius: 10px; display: inline-block;">
+                                <i class="fas fa-cog text-light"></i>
+                            </span>
+                            <span class="p" style="background: #4291e1;border-radius: 10px; display: inline-block;"><i
+                                    class="fas fa-sign-out-alt text-light pr"></i>Ra xe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            23/03/2021<br>
+                            09:19:33
+                        </td>
+                        <td>
+                            23/03/2021<br>
+                            09:24:25
+                        </td>
+                        <td class="text-primary">29A11234</td>
+                        <td></td>
+                        <td>Vũ Thị Lan Anh</td>
+                        <td>Trần Thanh Chính</td>
+                        <td>0</td>
+                        <td>
+                            <span class="p m"
+                                style="background: greenyellow; border-radius: 10px; display: inline-block;">
+                                <i class="fas fa-cog text-light"></i>
+                            </span>
+                            <span class="p" style="background: #4291e1;border-radius: 10px; display: inline-block;"><i
+                                    class="fas fa-sign-out-alt text-light pr"></i>Ra xe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            22/03/2021<br>
+                            22:23:28
+                        </td>
+                        <td>
+                            22/03/2021<br>
+                            22:24:13
+                        </td>
+                        <td class="text-primary">29A11235</td>
+                        <td></td>
+                        <td>Vũ Thị Lan Anh</td>
+                        <td>Tạ Hoàng An</td>
+                        <td>0</td>
+                        <td>
+                            <span class="p m"
+                                style="background: greenyellow; border-radius: 10px; display: inline-block;">
+                                <i class="fas fa-cog text-light"></i>
+                            </span>
+                            <span class="p" style="background: #4291e1;border-radius: 10px; display: inline-block;"><i
+                                    class="fas fa-sign-out-alt text-light pr"></i>Ra xe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            22/03/2021<br>
+                            15:37:31
+                        </td>
+                        <td>
+                            25/03/2021<br>
+                            13:58:16
+                        </td>
+                        <td class="text-primary">30F55229</td>
+                        <td></td>
+                        <td>Vũ Thị Lan Anh</td>
+                        <td>Tạ Hoàng An</td>
+                        <td>0</td>
+                        <td>
+                            <span class="p m"
+                                style="background: greenyellow; border-radius: 10px; display: inline-block;">
+                                <i class="fas fa-cog text-light"></i>
+                            </span>
+                            <span class="p" style="background: #4291e1;border-radius: 10px; display: inline-block;"><i
+                                    class="fas fa-sign-out-alt text-light pr"></i>Ra xe</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>
+                            18/03/2021<br>
+                            16:41:58
+                        </td>
+                        <td>
+                            18/03/2021<br>
+                            16:56:07
+                        </td>
+                        <td class="text-primary">29P2.2001</td>
+                        <td></td>
+                        <td>Tạ Hoàng An</td>
+                        <td>Tạ Hoàng An</td>
+                        <td></td>
+                        <td>
+                            <span class="p m"
+                                style="background: greenyellow; border-radius: 10px; display: inline-block;">
+                                <i class="fas fa-cog text-light"></i>
+                            </span>
+                            <span class="p" style="background: #4291e1;border-radius: 10px; display: inline-block;"><i
+                                    class="fas fa-sign-out-alt text-light pr"></i>Ra xe</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- End table -->
+
+            <p>Tổng số bằng ghi: 6</p>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+
+</html>

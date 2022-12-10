@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học jQuery - 03</title>
+    <style>
+        html{
+            height: 2000px;
+        }
+        .block-animation{
+            width: 400px;
+            height: 200px;
+            background: green;
+            color: #fff;
+            position: relative;
+        }
+        .back{
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            z-index: 100;
+            display: none;
+        }
+        
+        .back span{
+            background: red;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+           
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <input type="checkbox" id="checkAll" /> Check All
+    <hr>
+    <p><input type="checkbox" class="check-item" /> Item 1</p>
+    <p><input type="checkbox" class="check-item" /> Item 2</p>
+    <p><input type="checkbox" class="check-item" /> Item 3</p>
+    <p><input type="checkbox" class="check-item" /> Item 4</p>
+
+    <hr>
+
+    <div class="block">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad autem, unde nihil quo officiis, voluptates beatae ducimus voluptatibus expedita deserunt accusamus. Minima odio eligendi harum molestiae minus, sequi perferendis similique!
+        </div>
+    </div>
+
+    <div class="block-2">
+        <ul class="list-1">
+            <li class="target">Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <div class="list-2">
+            <li class="target">Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div> -->
+
+    <!-- <div class="block-3">
+        <p>
+            Item 1
+        </p>
+        <p>
+            Item 2
+        </p>
+        <p>
+            Item 3
+        </p>
+        <p>
+            Item 4
+        </p>
+    </div>
+
+    <button class="btn">Hiện</button>
+    <div class="result" style="display: none;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam placeat laboriosam voluptatem ipsa porro reprehenderit ullam quidem sapiente odio, excepturi maxime distinctio, iure, corrupti eum ad pariatur minus minima! Dignissimos.
+    </div>
+
+    <hr>
+
+    <button class="btn-fadein">Fade In</button>
+    <button class="btn-fadeout">Fade Out</button>
+    <div class="result-fade">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam placeat laboriosam voluptatem ipsa porro reprehenderit ullam quidem sapiente odio, excepturi maxime distinctio, iure, corrupti eum ad pariatur minus minima! Dignissimos.
+    </div>
+
+    <hr>
+     -->
+    <div class="group">
+        <p><span>Công việc tại Unicode 1</span> <button type="button" class="remove-item">Remove</button></p>
+        <p><span>Công việc tại Unicode 2</span> <button type="button" class="remove-item">Remove</button></p>
+        <p><span>Công việc tại Unicode 3</span> <button type="button" class="remove-item">Remove</button></p>
+    </div>
+
+    <hr>
+
+    <button class="btn-down">SlideDown</button>
+    <button class="btn-up">slideUp</button>
+    <div class="result-slide">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam placeat laboriosam voluptatem ipsa porro reprehenderit ullam quidem sapiente odio, excepturi maxime distinctio, iure, corrupti eum ad pariatur minus minima! Dignissimos.
+    </div>
+
+    <hr>
+    <button class="btn-toggle">Toggle</button>
+    <div class="result-toggle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae officiis assumenda modi inventore veritatis eveniet corporis eius natus laboriosam dolorem fuga quibusdam ratione obcaecati aliquam doloribus itaque harum cumque?
+    </div>
+
+    <hr>
+    <button class="btn-slide-toggle">Slide Toggle</button>
+    <div class="result-slide-toggle">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, repudiandae officiis assumenda modi inventore veritatis eveniet corporis eius natus laboriosam dolorem fuga quibusdam ratione obcaecati aliquam doloribus itaque harum cumque?
+    </div>
+    <!-- <hr>
+    <button type="button" class="menu-toggle-btn">Menu Toggle</button>
+    <div class="menu-toggle" style="width: 0; transition: all 0.4s linear; overflow: hidden;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed mollitia illum voluptates minima unde perferendis placeat fugit accusantium labore sint similique ipsam nemo exercitationem eius iste nostrum ad, veritatis doloribus.
+    </div> -->
+
+    <button class="run-animation">Run Animation</button>
+    <div class="block-animation">
+        ANIMATION
+    </div>
+
+    <h2 id="heading-2">Giới thiệu</h2>
+
+    <div class="back">
+        <span>Top</span>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script_03.js"></script>
+</body>
+</html>

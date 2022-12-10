@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.block {
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid red;
+    background-color: #d8565699;
+    /* background-image: linear-gradient(to right, #d8565699, #28cc2bc7, #a58400c9, #6267e5d9); */
+    background: radial-gradient(circle, rgba(177, 183, 186, 1) 0%, rgba(244, 214, 245, 1) 13%, rgba(255, 255, 255, 1) 22%, rgba(215, 121, 71, 1) 47%, rgba(47, 190, 127, 1) 71%, rgba(22, 14, 223, 1) 100%);
+}

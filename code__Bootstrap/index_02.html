@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Bootstrap - 02</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="height: 4000px;">
+    
+    <div class="container">
+        <div class="accordion mb-5" id="faqs_accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                  
+                <button class="d-block w-100 btn btn-primary text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq_1">
+                  Câu hỏi 1
+                </button>
+              </h2>
+              <div id="faq_1" class="accordion-collapse collapse" data-bs-parent="#faqs_accordion">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq_2">
+                    Câu hỏi 2
+                  </button>
+                </h2>
+                <div id="faq_2" class="accordion-collapse collapse" data-bs-parent="#faqs_accordion">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+
+        <div class="accordion" id="course_accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                  
+                <button class="d-block w-100 btn btn-primary text-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#course_1">
+                  Câu hỏi 1
+                </button>
+              </h2>
+              <div id="course_1" class="accordion-collapse collapse" data-bs-parent="#course_accordion">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#course_2">
+                    Câu hỏi 2
+                  </button>
+                </h2>
+                <div id="course_2" class="accordion-collapse collapse" data-bs-parent="#course_accordion">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+
+        <hr>
+
+        <h3>Alert - Hộp thoại thông báo</h3>
+        <div class="alert alert-success alert-dismissible fade show">
+            Đăng nhập thành công
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="alert alert-danger">Đăng nhập thất bại</div>
+        <div class="alert alert-warning">Đăng nhập thất bại</div>
+
+        <h3>Danh sách đơn hàng <span class="badge bg-danger text-warning rounded-pill">10</span></h3>
+
+        <h3>Breadcrumb: Thanh điều hướng</h3>
+       
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">Tin tức</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Bài viết 1</li>
+        </ul>
+
+        <h3>Button</h3>
+        <button type="button" class="btn btn-primary custom-btn">Xin mời vào</button>
+        <button type="button" class="btn btn-primary" disabled>Xin mời vào</button>
+        <button onclick="window.location.href='https://google.com';" type="button" class="btn btn-link">Xin mời vào</button>
+        <a href="#" class="btn btn-success disabled">Mở website</a>
+
+        <hr>
+        <div style="background-color: green; padding: 20px;">
+            <button type="button" class="btn btn-outline-light btn-lg">Xem sản phẩm</button>
+            <button type="button" class="btn btn-outline-light" disabled>Xem sản phẩm</button>
+            <button type="button" class="btn btn-outline-light btn-sm">Xem sản phẩm</button>
+            <input type="button" class="btn btn-outline-light disabled" value="Xem sản phẩm"/>
+        </div>
+        <hr>
+        <div class="w-25 mx-auto">
+             <p class="d-grid">
+                <button type="button" class="btn btn-danger">Cảnh báo</button>
+                <button type="button" class="btn btn-danger active">Cảnh báo</button>
+            </p>
+        </div>
+       
+        <h3>Button Group</h3>
+        <div class="btn-group">
+            <button type="button" class="btn btn-success active">Chưa bắt đầu</button>
+            <button type="button" class="btn btn-success">Đang triển khai</button>
+            <button type="button" class="btn btn-success">Hoàn thành</button>
+        </div>
+        <hr>
+        <div class="btn-group btn-group-vertical">
+            <input type="radio" class="btn-check" name="project-status" id="inactive" checked/>
+            <label for="inactive" class="btn btn-outline-danger">Chưa bắt đầu</label>
+
+            <input type="radio" class="btn-check" name="project-status" id="active"/>
+            <label for="active" class="btn btn-outline-danger">Đang triển khai</label>
+
+            <input type="radio" class="btn-check" name="project-status" id="finish"/>
+            <label for="finish" class="btn btn-outline-danger">Hoàn thành</label>
+        </div>
+
+        <h3>Ẩn/hiện nội dung</h3>
+        <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#show-content">
+              Hiện
+            </a>
+          </p>
+          <div class="collapse" id="show-content">
+           
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+           
+          </div>
+
+          <p>
+           
+            <button type="button" class="btn btn-success"  data-bs-toggle="collapse" data-bs-target="#show-content2">Hiển thị</button>
+          </p>
+          <div class="collapse" id="show-content2">
+           
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+           
+          </div>
+
+          <h3>Button dropdown</h3>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger">Action</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+            
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
+        
+          <h3>Modal</h3>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login-modal">
+            Đăng nhập
+          </button>
+          
+          <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="login-modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Đăng nhập hệ thống</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="">Tên đăng nhập</label>
+                        <input type="text" class="form-control" placeholder="Tên đăng nhập..." />
+                    </div>
+                    <div class="mb-3">
+                        <label for="">Mật khẩu</label>
+                        <input type="password" class="form-control" placeholder="Mật khẩu..." />
+                    </div>
+                    <p><a href="#register-modal" data-bs-toggle="modal">Đăng ký ngay</a></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                  <button type="button" class="btn btn-primary">Đăng nhập</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="register-modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Đăng ký tài khoản</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="">Họ và tên</label>
+                        <input type="text" class="form-control" placeholder="Tên đăng nhập..." />
+                    </div>
+                    <div class="mb-3">
+                        <label for="">Tên đăng nhập</label>
+                        <input type="text" class="form-control" placeholder="Tên đăng nhập..." />
+                    </div>
+                    <div class="mb-3">
+                        <label for="">Mật khẩu</label>
+                        <input type="password" class="form-control" placeholder="Mật khẩu..." />
+                    </div>
+                    <p><a href="#login-modal" data-bs-toggle="modal">Đăng nhập</a></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                  <button type="button" class="btn btn-primary">Đăng ký tài khoản</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#video-modal">Xem video</button>
+          <div class="modal fade" id="video-modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Xem video</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/-TEaWd-p50M?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3>Tab</h3>
+          <ul class="nav nav-tabs nav-pills justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#profile">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#contact">contact</a>
+            </li>
+          
+          </ul>
+
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                Home content
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                Profile content
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                Contact content
+            </div>
+          </div>
+
+          <h3>Off Canvas</h3>
+          <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            Menu
+          </a>
+        
+          
+          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+              </div>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h3>Phân trang</h3>
+          <nav aria-label="Page navigation example" class="">
+            <ul class="pagination justify-content-end">
+              <li class="page-item disabled"><a class="page-link" href="#">Trang trước</a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Trang sau</a></li>
+            </ul>
+          </nav>
+
+         <h3>Placeholder - Loading</h3>
+         <div class="card" aria-hidden="true">
+           
+            <div class="card-body">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+            </div>
+          </div> 
+        <h3>Popover</h3>
+        
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Thông thanh toán" data-bs-placement="left" data-bs-content="Ngân hàng vietcombank <br/> Số tk">Click to toggle popover</button>
+        </div>
+
+        <h3>Thanh tiến trình</h3>
+        <div class="progress status-loading">
+            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 0%; transition: width 0.4s linear;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+        </div>
+        <hr/>
+        <button type="button" class="btn btn-primary start-play">Start</button>
+        <hr>
+        <div class="progress">
+          <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">Chưa triển khai: 25%</div>
+          <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Đang triển khai: 40%</div>
+          <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Hoàn thành: 35%</div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/custom.js"></script>
+</body>
+</html>

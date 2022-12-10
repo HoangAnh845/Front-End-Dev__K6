@@ -1,0 +1,18 @@
+/*
+Định dạng css theo dự án
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+#full-page .fullpage-inner>div{
+    background-color: brown;
+    font-size: 30px;
+
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

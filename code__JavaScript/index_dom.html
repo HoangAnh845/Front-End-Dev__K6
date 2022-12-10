@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom trong Javascript</title>
+    <style>
+        .content-wrapper{
+            border: 1px solid red;
+            width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        /* .show{
+            display: block;
+        } */
+        .content{
+            transition: all 0.4s linear;
+        }
+        .hide{
+            /* display: none; */
+            transform: scaleY(0);
+            transform-origin: 0 0;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores maiores tempora at, iste iusto rem incidunt fugiat debitis harum, sunt eveniet aut perspiciatis eos ea enim tempore sequi, sed nam?</p>
+    <button class="btn" type="button" id="button"><span>Click Me</span></button>
+    <button class="btn" type="button" id="button"><span>Unicode</span></button>
+
+    <hr>
+
+    <div class="result" id="result" data-count="0">
+        Unicode
+    </div>
+    <button type="button" class="button--action">Action Change</button>
+    <br/>
+    <button type="button" class="button-confirm">Xác nhận</button>
+
+    <h3>Dom CSS</h3>
+    <div class="block block1 block2 block3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tenetur laborum aperiam incidunt placeat explicabo fuga quia voluptates fugit, deserunt, consequuntur necessitatibus, nulla pariatur ea optio libero. Suscipit, doloremque laudantium!
+    </div>
+    <button type="button" class="change-style">Change Style</button>
+    
+    <div class="content-wrapper">
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo impedit quos corrupti perferendis illum, mollitia praesentium rerum deleniti illo et! Fugit quasi laborum pariatur porro nesciunt officiis, itaque aperiam officia?
+        </div>
+        <hr>
+        <button type="button" class="action-show">Ẩn</button>
+    </div>
+    <script src="js/script_dom.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1686d2;
+    --secondardy-color: green;
+    --font-default: "Tahoma";
+}
+
+.block-1 {
+    width: 200px;
+    height: 200px;
+    background: var(--primary-color);
+    /*variable*/
+    border-radius: 100%;
+}
+
+.block-2 {
+    width: 200px;
+    height: 200px;
+    background: var(--secondardy-color);
+    color: var(--primary-color);
+    font-family: var(--font-default);
+    border-radius: 100%;
+}
+
+body {
+    padding: 50px;
+}

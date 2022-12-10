@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullPage Javascript</title>
+    <link rel="stylesheet" href="css/fullPage.css" />
+    <link rel="stylesheet" href="css/fullPageCustom.css">
+</head>
+<body>
+    
+    <div id="full-page">
+        <div>
+            SECTION 01
+        </div>
+        <div>
+            SECTION 02
+        </div>
+        <div>
+            SECTION 03
+        </div>
+        <div>
+            SECTION 04
+        </div>
+        <div>
+            SECTION 05
+        </div>
+    </div>
+
+    <script src="js/fullPage.js"></script>
+    <script>
+
+        //Sử dụng thư viện
+        document.querySelector('#full-page').fullPage({
+            timeDuration: 600, //Thời gian hoàn thành hiệu ứng,
+            dotPosition: 'bottom' //top, center, bottom
+        });
+
+    </script>
+</body>
+</html>

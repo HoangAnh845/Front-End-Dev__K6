@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM trong CSS</title>
+</head>
+
+<body>
+    <header class="header header--fixed">
+        <div class="header__top-bar">
+            <div class="row">
+                <div class="col">
+                    <nav class="header__top-bar--left">
+                        <ul>
+                            <li>Email</li>
+                            <li>Hotline</li>
+                        </ul>
+                    </nav>
+                    <!--End .header__top-bar--left-->
+                </div>
+                <div class="col">
+                    <nav class="header__top-bar--right">
+                        <ul>
+                            <li>Đăng ký</li>
+                            <li>Đăng nhập</li>
+                        </ul>
+                    </nav>
+                    <!--End .header__top-bar--right-->
+                </div>
+            </div>
+        </div>
+        <!--End .header__top-bar-->
+        <div class="header__inner">
+            <div class="row">
+                <div class="col">
+                    <div class="header__inner--logo">
+                        <a href="#"><img src="" alt=""></a>
+                    </div>
+                    <!--End .header__inner--logo-->
+                </div>
+                <div class="col">
+                    <nav class="header__inner--primary-menu">
+                        <ul class="inner__top-menu">
+                            <!--
+                                class inner lúc này sẽ thành block 
+                                hoặc primary-menu thành block
+                            -->
+                            <li class="inner__top-menu--item">
+                                <a href="#" class="top-menu__link">Trang chủ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--End .header__inner--primary-menu-->
+                </div>
+                <div class="col">
+                    <div class="header__inner--button">
+                        <a href="#" class="button__red">Đăng tin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End .header__inner-->
+    </header>
+    <!--End .header-->
+</body>
+
+</html>

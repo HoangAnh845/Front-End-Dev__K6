@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    border: 1px solid red;
+    /* overflow: auto; */
+}
+
+.row::after{
+    content: ''; /*Để tồn tại after*/
+    display: block; /*Chuyển dạng thẻ HTML thành block*/
+    clear: both;
+}
+
+.col{
+    width: 33.33%;
+    float: left; 
+    border: 1px solid red;
+}
+.clear{
+    clear: both;
+}

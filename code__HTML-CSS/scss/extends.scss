@@ -1,0 +1,157 @@
+.box{
+    background-color: green;
+    padding: 20px 0px;
+    font-size: 20px;
+    color: #fff;
+}
+section{
+    @extend .box;
+    border: 1px solid red;
+}
+
+.container{
+    @extend .box;
+    @extend section;
+}
+
+@mixin list-style {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+}
+
+@mixin border-style {
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+@mixin changeWidth($width, $height:0) {
+    width: $width;
+    max-width: $width;
+    height: $height;
+    min-height: $height;
+}
+
+@mixin center($property, $value) {
+    margin: 0 auto;
+    width: 1170px;
+    #{$property}: $value;
+}
+
+.menu{
+    @include list-style;
+    @include border-style;
+    @include changeWidth(300px);
+    background-color: green;
+    color: #fff;
+}
+
+.section-box{
+    @include changeWidth(500px);
+    @include center(border, 1px solid red);
+}
+
+.news-box{
+    @include changeWidth(200px, 1000px);
+    @include center(color, red);
+}
+
+//Placeholder
+%reset-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul{
+    @extend %reset-list;
+    position: relative;
+    top: 200px;
+    left: 0;
+    right: 0;
+}
+.title-box{
+    @extend %reset-list;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//Function
+
+@function getWidth($itemNumber){
+    $width: 100%/$itemNumber;
+    @return $width; //Phải có @return để trả về giá trị của hàm
+}
+
+.row{
+    .col{
+        padding: 0px 10px;
+        float: left;
+        width: getWidth(4);
+    }
+}
+
+//if else
+@mixin position($position, $valueX, $valueY) {
+
+    position: absolute;
+
+    @if ($position=='left-top'){
+        left: $valueX;
+        top: $valueY;
+    }
+
+    @else if ($position=='top-right'){
+        top: $valueY;
+        right: $valueX;
+    }
+
+    @else if ($position=='right-bottom'){
+        right: $valueX;
+        bottom: $valueY;
+    }
+
+    @else{
+        left: $valueX;
+        bottom: $valueY;
+    }
+}
+
+.block{
+    @include position('left-top', 10px, 20px)
+}
+
+/*
+Thực hành:
+- Viết 1 mixin để tính toán padding dựa vào số lượng cột
+- 1 cột => padding = 0
+- 2 cột => padding = 10
+- 3 cột => padding = 20
+- Trường hợp còn lại => padding = 15
+*/
+
+@mixin calPadding($columnNumber) {
+
+    //Tính toán
+    $padding: 0;
+    @if ($columnNumber==1){
+        $padding: 0;
+    }
+    @else if ($columnNumber==2){
+        $padding: 10px;
+    }
+    @else if ($columnNumber==3){
+        $padding: 20px;
+    }
+    @else{
+        $padding: 15px;
+    }
+
+    //Khai báo thuộc tính
+    padding: 0 $padding;
+}
+
+.content{
+    @include calPadding(3);
+}

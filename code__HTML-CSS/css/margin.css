@@ -1,0 +1,47 @@
+.block-1{
+	border: 1px solid red;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wrapper{
+	border: 1px solid red;
+	width: 500px;
+	min-height: 500px;
+}
+
+.wrapper .block-2{
+	background: green;
+	color: #fff;
+	height: 500px;
+	margin: 50px 20px 20px 20px;
+}
+
+.banner{
+	height: 400px;
+	background: green;
+	color: #fff;
+	/*padding-top: 150px;*/
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.banner h1{
+	text-align: center;
+	margin-top: 30%;
+}
+
+.col-1{
+	width: 30%;
+	height: 150px;
+	background: green;
+}
+
+.col-2{
+	width: 30%;
+	height: 200px;
+	background: blue;
+
+	/*margin-left: 30%;
+	margin-top: -150px;*/
+}

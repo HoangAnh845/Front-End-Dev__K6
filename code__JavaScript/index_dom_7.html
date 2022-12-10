@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom trong Javascript</title>
+    <style>
+        .editor{
+            height: 400px;
+            background: #000;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .parent{
+            position: relative;
+            border: 1px solid red;
+            height: 400px;
+        }
+
+        .element{
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            position: absolute;
+           
+        }
+    
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <div class="editor">
+
+    </div>
+    <button class="action">Enable Edit</button>
+
+    <hr>
+
+    <div class="parent">
+        <div class="element">
+
+        </div>
+    </div>
+
+    <div class="editor animate__animated animate__backInLeft wow">
+
+    </div>
+
+    <div class="editor animate__animated animate__backInRight wow">
+
+    </div>
+
+    <div class="editor animate__animated animate__bounceInDown wow">
+
+    </div>
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/script_dom_7.js"></script>
+    
+</body>
+</html>

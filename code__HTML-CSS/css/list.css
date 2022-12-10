@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+    background: burlywood;
+}
+
+.wrapper>ul {
+    border: 1px solid red;
+    list-style-position: inside;
+    /* list-style: none; */
+    /* list-style-type: upper-roman; */
+    /* list-style-image: url('../images/icon-arrow.png'); */
+    /* list-style: inside; */
+    /* margin-left: 10px; */
+}
+
+.wrapper>ul ul {
+    margin-left: 20px;
+    background-color: cadetblue;
+}
+
+.wrapper ul li {
+    /* background: url('../images/icon-arrow.png') no-repeat;
+    background-size: 16px 16px;
+    background-position: left center;
+    padding-left: 20px;
+    line-height: 1.6; */
+    /* display: inline-block; */
+}

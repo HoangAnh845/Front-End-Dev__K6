@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid green;
+    padding: 20px 0px;
+}
+
+.item {
+    border: 1px solid red;
+    background: cornflowerblue;
+    color: #fff;
+    font-size: 20px;
+    padding: 0px 30px;
+}
+
+
+/* .item {
+    height: 50px;
+}
+
+.item:nth-child(2) {
+    height: 100px;
+} */
+
+.row {
+    /* height: 500px; */
+    border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: stretch; */
+    /* align-content: center; */
+}
+
+
+/* .item-3 {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.item {
+    /* flex-basis: calc(100% / 4); */
+    /* width: calc(100% / 8); */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    flex: 1 1 calc(100% / 4);
+    /* order: 1; */
+}
+
+.item-1 {
+    order: 4;
+}
+
+.item-2 {
+    order: 2;
+}
+
+.item-3 {
+    order: 3;
+}
+
+.item-4 {
+    /* flex-grow: 2; */
+    /* flex-shrink: 0.1; */
+    /* align-self: center; */
+    order: 1;
+}
+
+.item-5 {
+    order: 5;
+}
+
+.item-6 {
+    order: 6;
+}
+
+
+/*Partner box*/
+
+.partner-box {
+    display: flex;
+    justify-content: center;
+}
+
+.partner-box .partner {
+    flex-grow: 1;
+    align-self: center;
+    text-align: center;
+}
+
+.banner {
+    height: 100vh;
+    background: url('http://html.lionode.com/nature/n-look/image/prlx.jpg') no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner h1 {
+    font-size: 50px;
+}
+
+.flex2 {
+    display: flex;
+    border: 1px solid red;
+}
+
+.test-item-3 {
+    display: flex;
+    flex-direction: column;
+}
